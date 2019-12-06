@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Calculator
+comment1.params=
+comment1.target=Calculator\ getInstance()
+comment2.params=
+comment2.target=Calculator()
+comment3.params=scanner
+comment3.target=void\ checkInt(java.util.Scanner)
+comment4.params=scanner
+comment4.target=void\ checkSign(java.util.Scanner)
+comment5.params=x\ y
+comment5.target=int\ sum(int,\ int)
+comment6.params=x\ y
+comment6.target=int\ diff(int,\ int)
+comment7.params=x\ y
+comment7.target=int\ mult(int,\ int)
+comment8.params=x\ y
+comment8.target=java.lang.Integer\ div(int,\ int)
+numComments=9
