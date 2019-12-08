@@ -13,8 +13,7 @@ public class Main {
              x = scanner.nextInt();
              
              System.out.println("Introduceti operatia: ");
-             calculator.checkSign(scanner);
-             sign = scanner.next();
+             sign =calculator.checkSign(scanner);
              
              System.out.println("Introduceti al doilea nr: ");
              calculator.checkInt(scanner);

@@ -19,31 +19,18 @@ public class Calculator {
                    System.err.println("Nu ati introdus un numar!");
                    System.out.println("Incercati din nou!");
                    scanner.next();
-              } 
+         } 
     }
     
-    public void checkSign(Scanner scanner) {
-         // String typed = null;
-         // while (scanner.hasNext()) {
-             // typed = scanner.next();
-             // if ((Pattern.matches("([\\-\\+\\/\\*])", typed))) {
-                 // System.out.println(typed);
-                 // System.err.println("You have not typed an operand! (ex: + , - , * , /)!");
-                 // System.out.println("Try again!");
-                 // // scanner.next();
-             // }
-             // // scanner.next();
-             // if (typed.equals("exit")) {
-                // System.out.println("Bye!");
-                // System.exit(0); 
-                // }
-         // }
-          // scanner.close();       
-        for (;!scanner.hasNext("[-+*/]");) {
+    public String checkSign(Scanner scanner) {  
+        String line;
+        scanner.nextLine();
+        for (;!"+-*/".contains(line = scanner.nextLine());) {
                    System.err.println("You have not typed an operand! (ex: + , - , * , /)!");
                    System.out.println("Try again!");
                    scanner.next();
         } 
+        return line;
     }
  
     public int sum(int x, int y) { 
